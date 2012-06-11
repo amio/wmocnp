@@ -4,7 +4,6 @@
 // @version      0.1
 // @description  将 wmo.178.com 中鼠标指向技能的英文说明替换为中文说明
 // @match        http://wmo.178.com/*
-// @copyright    2012+, You
 // ==/UserScript==
 
 
