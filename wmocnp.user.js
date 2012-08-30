@@ -11,14 +11,14 @@
 (function(func){
     // inject func
     var el = document.createElement('script');
-    el.innerHTML = '(' + func.toString() + ')()'; console.log(el);
+    el.innerHTML = '(' + func.toString() + ')()';
     document.body.appendChild(el); // run the script
 })(function(){
 
     document.getElementById('combathead').setAttribute('style','margin-top: -160px');
     document.getElementById('combatnav').setAttribute('style','margin-top: -160px');
     
-    // fix armofy link
+    // fix armory link
     var armoryLink = document.querySelectorAll('a[href^="http://cn.battle.net"]');
     for(var i = armoryLink.length; i--; ){
         armoryLink[i].href = armoryLink[i].href.replace('cn.battle.net','www.battlenet.com.cn')
